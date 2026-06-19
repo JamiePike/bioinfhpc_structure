@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this project or data, please cite it as below."
+authors:
+  - family-names: "Pike"
+    given-names: "Jamie"
+    orcid: "https://orcid.org/0009-0005-7179-6530"
+title: "bioinformatic hpc cookiecutter template"
+version: "0.1.0"
+date-released: 2026-06-19
+url: "https://github.com/JamiePike/bioinfhpc_structure/"
