@@ -1,0 +1,28 @@
+---
+title: "{{ cookiecutter.project_name }} - Lab Notebook"
+author: "{{ cookiecutter.author_name }}"
+date: now
+format:
+  typst:
+    toc: true
+    number-sections: true
+---
+
+## Project Initialization
+
+**Date:** `r Sys.Date()` (or current execution date)  
+**Data Provenance:** Document where the raw data came from.
+
+### Objective
+Provide a brief summary of the analytical goals for this notebook run.
+
+### Notes & Observations
+* Snakemake workflow initialized.
+* Symlinks verified against scratch space.
+
+### Key Results
+```{r}
+# Quarto code block for quick data inspection
+import os
+print(f"Project slug: {{ cookiecutter.project_slug }}")
+```

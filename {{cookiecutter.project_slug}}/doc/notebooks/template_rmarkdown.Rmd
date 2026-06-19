@@ -1,0 +1,13 @@
+---
+title: "{{ cookiecutter.project_name }} - Analysis Notebook"
+author: "{{ cookiecutter.author_name }}"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    theme: cosmic
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk.cm(echo = TRUE)
+```

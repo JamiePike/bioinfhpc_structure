@@ -1,0 +1,20 @@
+{
+  "project_name": "Bioinformatics Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "author_name": "Your Name",
+  "email": "your.email@example.com",
+  "orcid_id": "None",
+  "hpc_scratch_base": "/scratch/user/{{ cookiecutter.author_name.lower().split()[0] }}",
+  "license_type": [
+    "MIT",
+    "Apache-2.0",
+    "GPL-3.0",
+    "None"
+  ],
+  "notebook_type": [
+    "Quarto Markdown (.qmd / .md)",
+    "Jupyter Notebook (.ipynb)",
+    "R Markdown (.Rmd)",
+    "All / Hybrid"
+  ]
+}
