@@ -5,7 +5,7 @@ from pathlib import Path
 def clean_notebooks():
     """Removes unwanted notebook formats based on user selection."""
     choice = "{{ cookiecutter.notebook_type }}"
-    notebook_dir = Path("doc/notebooks")
+    notebook_dir = Path("docs/notebooks")
     
     keep_files = {
         "Quarto Markdown (.qmd / .md)": ["template_quarto.qmd"],
