@@ -23,9 +23,8 @@ data_directory
     ├── LICENSE
     ├── README.md               # summary project documentation and/or pipeline execution guide
     ├── config/                 # project-specific runtime configurations
-    │   ├── samples.tsv         # sample IDs and metadata
-    │   └── slurm_profile/      # SLURM scheduler execution directives
-    │       └── config.yaml     # cluster resource allocation limits (partitions, RAM, time)
+    │   └── samples.tsv      # SLURM scheduler execution directives
+    │      
     ├── data/                   # directory tracking input datasets 
     │   ├── external/           # public or third-party datasets 
     │   │   └── README.md
@@ -48,6 +47,9 @@ data_directory
     ├── src/                    # source code and helper scripts
     └── workflow/               # pipeline execution engine 
         ├── Snakefile           # main Snakemake file
+        │   └── profiles/      # SLURM scheduler execution directives
+        │       └── deafault/
+        │           └── profile.yaml  # cluster resource allocation limits (partitions, RAM, time)
         ├── containers/         # Rrcipes for container images (Singularity/Apptainer)
         ├── envs/               # version-controlled software dependency environments (Conda YAML)
         └── rules/              # snakemake rule files included by the main Snakefile
@@ -56,3 +58,4 @@ data_directory
 ## References
 
 Noble, W.S., 2009. A quick guide to organizing computational biology projects. PLoS computational biology, 5(7), p.e1000424. doi: [https://doi.org/10.1371/journal.pcbi.1000424](https://doi.org/10.1371/journal.pcbi.1000424) 
+
